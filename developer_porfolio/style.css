@@ -39,7 +39,6 @@
     margin-left: 250px;
 }
 
-
 .title{
     margin-bottom: 100px;
     font-size: 70px;
@@ -50,8 +49,6 @@
 .left-content h1{
     font-size: 100px;
 }
-
-
 
 .download-cv-btn{
     background-color: #fd6e0a;
@@ -97,7 +94,6 @@ nav{
     margin-right: 200px;
 }
 
-
 .logo{
     margin-right: auto;
     font-size: 60px;
@@ -139,3 +135,162 @@ nav{
     right: 0;
 }
 
+.about{
+    width: 70%;
+    height: 600px;
+    background-color: #fff8f3;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.personal-info{
+    margin-top: 40px;
+}
+
+.personal-info ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    margin: 0 20px;
+}
+
+.personal-info span{
+    opacity: 70%;
+}
+
+.skillset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.skillset ul{
+    margin-top: 50px;
+    display: flex;
+    list-style-type: none;
+    width: 70%;    
+    gap: 50px;
+}
+
+.skillset li{
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skillset h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skill-logo{
+    margin-bottom: 10px;
+}
+
+.skillset li div{
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.summary{
+    width: 70%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.summary-btn{
+    margin-bottom: 200px;
+}
+
+.vertical-box{
+    flex: 1 1 0%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.summary-btn{
+    margin-left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.vertical-box h3{
+    opacity: 60%;
+    margin-bottom: 20px;
+}
+
+.vertical-box h1{
+    font-weight: 600;
+}
+
+.university{
+    font-size: 22px;
+}
+
+.vertical-box h2{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff8f3;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.connect{
+    padding-left: 250px;
+}
+
+.connect p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icons{
+    color: orange;
+    font-size: 30px;
+}
+
+.icons i{
+    margin-right: 20px;
+}
+
+.message{
+    padding-right: 350px;
+}
+
+.message h1{
+    margin-bottom: 20px;
+}
+
+.message input,
+.message textarea{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 60px;
+    padding-left: 30px;
+}
+
+#description{
+    height: 90px;
+}
