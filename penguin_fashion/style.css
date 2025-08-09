@@ -128,3 +128,77 @@
     top: 400px;
     left: 100px;
 }
+
+.jackets{
+    display: flex;
+    width: 100%;
+}
+
+.yellow-jacket-image{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.women-jacket{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px auto;
+    gap: 90px;
+}
+
+.women-jacket h1{
+    align-self: flex-start;
+    font-size: 50px;
+    color: #233142;
+}
+
+.yellow-jacket-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.jacket-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jackets{
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.yellow-jacket-image{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.jacket-background{
+    background: rgb(241, 241, 241);
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
+
+.jacket-button h1{
+    align-self: flex-start;
+    font-size: 35px;
+    color: orange;
+    opacity: 70%;
+}
+
+.yellow-jacket-image h2{
+    font-size: 30px;
+}
