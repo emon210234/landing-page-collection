@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP CO</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="" class="flex space-x-3">
+          <span
+            class="self-center text-2xl font-extrabold whitespace-nowrap dark:text-white"
+          >
+            SHOP.CO
+          </span>
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+            class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <button
+            data-collapse-toggle="navbar-search"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-search"
+        >
+          <div class="relative mt-3 md:hidden">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Services
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section>
+      <div>
+        <h1 class="text-5xl font-[1000] p-3 my-4">
+          FIND CLOTHES THAT MATCHES YOUR STYLE
+        </h1>
+        <p class="p-3 font-extralight my-4">
+          Browse through our diverse range of meticulously crafted garments,
+          designed to bring out your individuality and cater to your sense of
+          style.
+        </p>
+
+        <div class="flex flex-col px-4">
+          <button
+            class="bg-black text-white p-3 rounded-full hover:bg-sky-700 focus:outline-indigo-900 focus:outline-offset-4 focus:outline-3 active:bg-red-300"
+          >
+            Shop Now
+          </button>
+        </div>
+
+        <!-- Statistics -->
+        <div class="flex flex-wrap my-4 justify-center gap-6">
+          <div class="font-extralight">
+            <span class="text-3xl font-semibold">200+ </span> <br />
+            International Brands
+          </div>
+
+          <div class="font-extralight">
+            <span class="text-3xl font-semibold">2,000+ </span> <br />
+            High-Quality Products
+          </div>
+
+          <div class="font-extralight">
+            <span class="text-3xl font-semibold">30,000+</span> <br />
+            Happy Customers
+          </div>
+        </div>
+        <div class="">
+          <img
+            class="w-full h-auto object-contain"
+            src="assets/hero_section/cover.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <div class="bg-black flex flex-wrap gap-5 justify-center py-10">
+            <img src="assets/hero_section/brand_list/Group.png" alt="" />
+            <img
+              src="assets/hero_section/brand_list/zara-logo-1 1.png"
+              alt=""
+            />
+            <img src="assets/hero_section/brand_list/Group-1.png" alt="" />
+            <img
+              src="assets/hero_section/brand_list/gucci-logo-1 1.png"
+              alt=""
+            />
+            <img
+              src="assets/hero_section/brand_list/prada-logo-1 1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW ARRIVAL -->
+    <section class="new-arrival flex flex-col">
+      <h1 class="text-5xl my-20 font-extrabold self-center">NEW ARRIVALS</h1>
+
+      <div class="preview flex flex-col items-center gap-10">
+        <div class="flex flex-col gap-3 items-center">
+          <div>
+            <img src="assets/new_arrival/Frame 32.png" alt="" />
+          </div>
+          <h2 class="font-semibold">T-shirt with Tape Details</h2>
+          <div class="text-orange-300">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <span class="text-black">
+              5/<span class="font-extralight">5</span>
+            </span>
+          </div>
+          <span class="font-semibold text-2xl"> $120 </span>
+        </div>
+
+        <div>
+          <div class="flex flex-col gap-3 items-center">
+            <img src="assets/new_arrival/Frame 58.png" alt="" />
+            <h2 class="font-semibold">T-shirt with Tape Details</h2>
+            <div class="text-orange-300">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-regular"></i>
+              <span class="text-black">
+                4/<span class="font-extralight">5</span>
+              </span>
+            </div>
+
+            <span class="font-semibold text-2xl"> $250 </span>
+          </div>
+        </div>
+        <button
+          class="font-semibold border-gray-500 border-1 p-5 rounded-full self-stretch mx-8"
+        >
+          View All
+        </button>
+      </div>
+    </section>
+
+    <!-- TOP SELLING -->
+
+    <section class="top-selling flex flex-col">
+      <h1 class="text-5xl my-20 font-extrabold self-center">TOP SELLING</h1>
+
+      <div class="preview flex flex-col items-center gap-10">
+        <div class="flex flex-col gap-3 items-center">
+          <div>
+            <img src="assets/top_selling/Frame 60.png" alt="" />
+          </div>
+          <h2 class="font-semibold">Vertical Stripped Shirt</h2>
+          <div class="text-orange-300">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <span class="text-black">
+              5/<span class="font-extralight">5</span>
+            </span>
+          </div>
+          <span class="font-semibold text-2xl"> $212 </span>
+        </div>
+
+        <div>
+          <div class="flex flex-col gap-3 items-center">
+            <img src="assets/new_arrival/Frame 58.png" alt="" />
+            <h2 class="font-semibold">Courage Graphic T-shirt</h2>
+            <div class="text-orange-300">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-regular"></i>
+              <span class="text-black">
+                4/<span class="font-extralight">5</span>
+              </span>
+            </div>
+
+            <span class="font-semibold text-2xl"> $145 </span>
+          </div>
+        </div>
+        <button
+          class="font-semibold border-gray-500 border-1 p-5 rounded-full self-stretch mx-8"
+        >
+          View All
+        </button>
+      </div>
+    </section>
+
+    <!-- BROWSE DRESS STYLE -->
+    <section
+      class="flex flex-col items-center my-20 gap-8 bg-gray-100 py-8 mx-8 rounded-3xl"
+    >
+      <h1 class="text-5xl text-center font-extrabold">BROWSE BY DRESS STYLE</h1>
+      <img src="assets/dress_style/Frame 32.png" alt="" />
+      <img src="assets/dress_style/Frame 106.png" alt="" />
+      <img src="assets/dress_style/Frame 107.png" alt="" />
+      <img src="assets/dress_style/Frame 108.png" alt="" />
+    </section>
+
+    <!-- CLIENT REVIEW -->
+    <section>
+      <div class="flex mx-4 relative">
+        <div class="text-5xl font-extrabold">
+          OUR HAPPY <br />
+          CUSTOMERS
+        </div>
+        <span class="self-end absolute right-0">
+          <i class="fa fa-arrow-left"></i>
+          <i class="fa fa-arrow-right"></i>
+        </span>
+      </div>
+      <div
+        class="flex flex-col gap-2 mx-4 my-5 border-gray-300 border-1 rounded-2xl p-4"
+      >
+        <div class="text-orange-300">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h2 class="font-semibold">Sarah M.</h2>
+        <p class="font-extralight">
+          "I'm blown away by the quality and style of the clotes I received from
+          Shop.co. from casual wear to elegant dresses, every piece I've bought
+          has exceeded my expectations."
+        </p>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="bg-black flex flex-col mx-4 p-5 py-10 rounded-3xl my-20">
+      <h1 class="text-4xl text-white font-extrabold">
+        STAY UP TO DATE ABOUT OUR LATEST OFFERS
+      </h1>
+      <div class="flex flex-col gap-4 mt-10">
+        <input
+          class="bg-white text-center rounded-full p-3"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address"
+        />
+        <button class="bg-white text-black p-3 rounded-full">
+          Subscribe to Newsletter
+        </button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="p-2 mx-2 space-y-4">
+      <h1 class="text-3xl font-extrabold">SHOP.CO</h1>
+      <p class="font-extralight">
+        We have clothes that suits your style and which you're proud to wear.
+        From women to men.
+      </p>
+      <div class="text-black-300 space-x-3 text-lg">
+        <span class="border-1 rounded-full p-1"
+          ><i class="fa-brands fa-facebook"></i
+        ></span>
+        <span class="border-1 rounded-full p-1"
+          ><i class="fa-brands fa-instagram"></i
+        ></span>
+        <span class="border-1 rounded-full p-1"
+          ><i class="fa-brands fa-twitter"></i
+        ></span>
+        <span class="border-1 rounded-full p-1"
+          ><i class="fa-brands fa-github"></i
+        ></span>
+      </div>
+
+      <div class="flex mt-10 relative">
+        <div class="flex flex-col gap-3">
+          <h1 class="text-xl font-semibold">COMPANY</h1>
+          <p class="text-md font-extralight">About</p>
+          <p class="text-md font-extralight">Features</p>
+          <p class="text-md font-extralight">Works</p>
+          <p class="text-md font-extralight">Career</p>
+        </div>
+
+        <div class="flex flex-col gap-3 absolute right-7">
+          <h1 class="text-xl font-semibold">HELP</h1>
+          <p class="text-md font-extralight">Customer Support</p>
+          <p class="text-md font-extralight">Delivery Details</p>
+          <p class="text-md font-extralight">Terms & Conditions</p>
+          <p class="text-md font-extralight">Privacy Policy</p>
+        </div>
+      </div>
+
+      <div class="flex mt-10 relative">
+        <div class="flex flex-col gap-3">
+          <h1 class="text-xl font-semibold">FAQ</h1>
+          <p class="text-md font-extralight">About</p>
+          <p class="text-md font-extralight">Features</p>
+          <p class="text-md font-extralight">Works</p>
+          <p class="text-md font-extralight">Career</p>
+        </div>
+
+        <div class="flex flex-col gap-3 absolute right-7">
+          <h1 class="text-xl font-semibold">HELP</h1>
+          <p class="text-md font-extralight">Customer Support</p>
+          <p class="text-md font-extralight">Delivery Details</p>
+          <p class="text-md font-extralight">Terms & Conditions</p>
+          <p class="text-md font-extralight">Privacy Policy</p>
+        </div>
+      </div>
+      <div class="mt-10 font-extralight text-center">
+        Shop.co @ 2000-2023, All Right Reserved
+      </div>
+
+      <div class="flex justify-center">
+        <img src="assets/footer/Frame 53.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
